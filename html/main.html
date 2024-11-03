@@ -10,12 +10,17 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/swiper.css" />
     <title>메인 | albireo web</title>
   </head>
 
@@ -71,14 +76,14 @@
       </header>
       <main class="main-container main">
         <section class="slide">
-          <div class="slide-contents">
-            <div class="slide-control">
+          <div class="slide-contents swiper mySwiper">
+            <!-- <div class="slide-control">
               <button class="circle show"></button>
               <button class="circle"></button>
-              <button class="circle"></button>
-            </div>
-            <ul class="list">
-              <li class="item">
+            </div> -->
+            <div class="swiper-pagination"></div>
+            <ul class="list swiper-wrapper">
+              <li class="item swiper-slide">
                 <img src="../image/bg-section-01.png" class="img" alt=" " />
                 <div class="inner">
                   <div class="text-box">
@@ -89,6 +94,20 @@
                     <p class="desc">
                       You will enjoy modern home comforts in a traditional
                       setting.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="item swiper-slide">
+                <img src="../image/bg-section-02.png" class="img" alt=" " />
+                <div class="inner">
+                  <div class="text-box">
+                    <h2 class="title">
+                      <span class="title-point">Build in pursuit</span>
+                      <br />Build for the future.
+                    </h2>
+                    <p class="desc">
+                      Enjoy the comfort of modern housing in a classic style.
                     </p>
                   </div>
                 </div>
@@ -590,10 +609,60 @@
           </div>
         </div>
       </footer>
+
+      <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        effect: "fade",
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      var a = document.querySelectorAll("a");
+      for (let i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", (e) => {
+          e.preventDefault();
+        });
+      }
+    </script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

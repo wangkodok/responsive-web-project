@@ -46,7 +46,11 @@
   padding: 15px 25px;
   border-radius: 8px;
   color: #fff;
-  background: linear-gradient(120deg, rgba(142, 84, 233, 1) 0%, rgba(71, 118, 230, 1) 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(142, 84, 233, 1) 0%,
+    rgba(71, 118, 230, 1) 100%
+  );
 }
 
 /* 푸터 */
@@ -165,12 +169,12 @@
   .footer .subscribe form {
     display: block;
   }
-  
+
   .footer .subscribe input {
     display: block;
     margin: 0 0 8px 0;
   }
-  
+
   .footer .subscribe button {
     width: 100%;
   }
@@ -180,7 +184,7 @@
   .main-container .more-btn {
     display: inline-block;
   }
-  
+
   .footer-contents {
     flex-wrap: wrap;
   }
@@ -209,14 +213,14 @@
   .footer .subscribe form {
     display: block;
   }
-  
+
   .footer .subscribe input {
     display: block;
     width: 100%;
     margin: 0 0 8px 0;
     box-sizing: border-box;
   }
-  
+
   .footer .subscribe button {
     width: 100%;
   }
@@ -246,7 +250,6 @@
   .footer .subscribe {
     width: 100%;
     margin: 0 0 40px 0;
-
   }
 
   .footer .about br {
@@ -265,14 +268,14 @@
   .footer .subscribe form {
     display: block;
   }
-  
+
   .footer .subscribe input {
     display: block;
     width: 100%;
     margin: 0 0 8px 0;
     box-sizing: border-box;
   }
-  
+
   .footer .subscribe button {
     width: 100%;
   }
@@ -282,7 +285,7 @@
   .main-container .more-btn {
     display: inline-block;
   }
-  
+
   .main-container .text-box .title {
     font-size: 32px;
   }
@@ -314,7 +317,7 @@
   .footer .subscribe input {
     width: 100%;
     box-sizing: border-box;
-    margin: 0 0 10px 0;;
+    margin: 0 0 10px 0;
   }
 
   .footer .subscribe button {
